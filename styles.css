@@ -1,0 +1,150 @@
+/* Base Styles -------------------- */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+}
+
+fieldset {
+    border: none;
+}
+
+
+/* ----------- Header ----------- */
+
+header {
+    height: 7em;
+    background-color:#2d3945;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1.5em;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+
+/* Form ---------- */
+
+.signUpHeader {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.banner {
+    margin: 3em 0;
+}
+
+.banner p {
+    padding: 0 1.5em;
+    color: #aaafb4;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.line1 {
+    border: 3px solid #2d3945;
+    margin-bottom: 5px;
+  }
+  
+.line2,
+.line3 {
+    border: 1px solid #2d3945;
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: .7em;
+}
+
+form {
+    width: 90%;
+    margin: 0 auto;
+    font-family: 'Merriweather', serif;
+}
+
+/* Form Fields -------------------- */
+
+input,
+textarea,
+#state {
+    font-size: 1em;
+    color: black;
+    font-weight: 300; 
+    width: 100%;
+    border: none;
+    height: 60px;
+    padding: 15px;
+    outline: 0;
+    margin-bottom: 1.2em;
+    border-radius: .3em;
+    border-bottom: 3px solid rgba(0,0,0, 0.05);
+    background-color: rgb(241, 240, 240);
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+label {
+    display: block;
+    margin: .7em 0; 
+    color: #9ea1a5;
+    font-size: 1.3em;
+}
+
+#zipCode {
+    width: 50%;
+}
+
+/* Attribute Selectors ------------- */
+
+input[placeholder] {
+    text-align: right;
+    font-size: .7em;
+    font-style: italic;
+}
+
+::placeholder {
+    color: #aaafb4;
+}
+
+input:focus,
+textarea:focus {
+  border: 3px solid #15145b;
+  background-color: lightgrey;
+}
+
+button {
+    background-color: #4ebbb5;
+    height: 60px;
+    width: 100%;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+/* Footer --------------------------- */
+
+footer p {
+    text-align: center;
+    font-size: .8em;
+    padding-top: 15px;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+/* Media Queries -------------------- */
+
+@media (max-width: 768px) {
+	.container {
+		width: 92%;
+	}
+}
