@@ -33,11 +33,6 @@ h1 {
 
 /* Form ---------- */
 
-.signUpHeader {
-    text-align: center;
-    font-size: 1.5em;
-}
-
 .banner {
     margin: 3em 0;
 }
@@ -48,6 +43,11 @@ h1 {
     line-height: 1.5em;
     text-align: center;
     font-size: 1.3em;
+}
+
+.signUpHeader {
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .line1 {
@@ -182,7 +182,7 @@ button {
 footer p {
     text-align: center;
     font-size: .8em;
-    padding-top: 15px;
+    padding-top: 20px;
     font-weight: 300;
     font-style: italic;
     color: #bbbec2;
@@ -191,8 +191,24 @@ footer p {
 }
 /* Media Queries -------------------- */
 
-@media (max-width: 768px) {
-	.container {
-		width: 92%;
-	}
+@media (min-width: 768px) {
+
+	form{
+	    width: 80%;
+    }
+
+    .container_1 input,
+    #state {
+        display: inline-block;
+        width: 70%;
+    }
+
+    .container_1 label {
+        display: inline-block;
+        width: 20%
+    }
+
+    #zipCode {
+        width: 30%;
+    }
 }
