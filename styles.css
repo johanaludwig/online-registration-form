@@ -13,7 +13,7 @@ fieldset {
 }
 
 
-/* ----------- Header ----------- */
+/* Header ----------- */
 
 header {
     height: 7em;
@@ -76,7 +76,12 @@ form {
 
 /* Form Fields -------------------- */
 
-input,
+input[id="fullname"],
+input[id="email"],
+input[id="phone"],
+input[id="street"],
+input[id="city"],
+input[id="zipCode"],
 textarea,
 #state {
     font-size: 1em;
@@ -94,7 +99,7 @@ textarea,
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
 
-label {
+.container_1 label {
     display: block;
     margin: .7em 0; 
     color: #9ea1a5;
@@ -105,16 +110,48 @@ label {
     width: 50%;
 }
 
-/* Attribute Selectors ------------- */
+.container_2 label {
+    display: inline-block;
+    margin: .8em 0;
+    color: #9ea1a5;
+    font-size: 1.2em;
+}
+
+input[type="checkbox"]{
+    margin-right: .8em;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+input[type="radio"] {
+    margin-right: .8em;
+    cursor: pointer;
+}
+
+.newsletterFormat label{
+    margin-top: 1.5em;
+    margin-bottom: 0;
+}
+
+.newsletterFormat{
+    margin-bottom: 1.7em;
+}
+
+textarea {
+    min-height: 10em;
+}
 
 input[placeholder] {
     text-align: right;
-    font-size: .7em;
+    font-size: 1em;
     font-style: italic;
 }
 
-::placeholder {
-    color: #aaafb4;
+::placeholder,
+#state,
+#topic {
+    color: #b6bcc2;
 }
 
 input:focus,
@@ -123,13 +160,22 @@ textarea:focus {
   background-color: lightgrey;
 }
 
+#fullname:focus,
+#email:focus {
+    text-align: left;
+}
+
+/* Button--------------------------- */
+
 button {
     background-color: #4ebbb5;
     height: 60px;
     width: 100%;
+    font-size: 25px;
     color: #fff;
     border-radius: 5px;
-  }
+    cursor: pointer;
+}
 
 /* Footer --------------------------- */
 
@@ -139,6 +185,8 @@ footer p {
     padding-top: 15px;
     font-weight: 300;
     font-style: italic;
+    color: #bbbec2;
+    font-size: 15px;
     
 }
 /* Media Queries -------------------- */
