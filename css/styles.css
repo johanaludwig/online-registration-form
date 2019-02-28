@@ -119,10 +119,6 @@ textarea,
 input[type="checkbox"],
 input[type="radio"] {
     margin-right: .8em;
-}
-
-input[type="checkbox"],
-input[type="radio"] {
     cursor: pointer;
 }
 
@@ -143,7 +139,10 @@ textarea {
     text-align: right;
 }
 
-#zipCode::placeholder {
+#zipCode::placeholder,
+#phone::placeholder,
+#city::placeholder,
+#street::placeholder {
     text-align: left
 }
 
