@@ -206,13 +206,17 @@ footer p {
     .container_1 input,
     #state {
         display: inline-block;
-        width: 75%;
+        width: 70%;
     }
 
     .container_1 label {
         display: inline-block;
-        width: 20%;
-        margin-right: 30px;
+        width: 25%;
+        font-size: 1.1em;
+    }
+
+    .container_2 label {
+        font-size: 1.1em;
     }
 
     #zipCode {
